@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ariana Papantonio | Data Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding-top: 70px; /* space for sticky nav */
+      background-color:	#FCFCF7;
+      color: #000;
+    }
+
+    #projects {
+      background-color:#F9F7F4; 
+    }
+
+    #skills {
+      background-color: #FCFCF7;
+    }
+
+    #contact {
+      background-color: #212529;
+    }
+
+
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+    }    
+
+    /* Sticky navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar .nav-link {
+    color: white !important;
+    }
+
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 30px;
+      object-fit: cover;
+      background-color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    .card-text {
+      font-size: 15px;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-outline-secondary {
+      background-color: #212529;   /* negro */
+      color: white;                /* texto blanco */
+      border-color: #212529;       /* mismo color que fondo */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+  .btn-outline-secondary:hover {
+      background-color: white;     /* fondo blanco */
+      color: #212529;              /* texto negro */
+      border-color: #212529;
+    }
+
+    .contact-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: white;
+  padding: 6px;
+}
+
+.gmail-icon {
+  padding: 0;
+  scale: 1.0;  
+}
+
+
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ariana Papantonio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h1 class="display-4 fw-bold mb-4">About</h1>
+    <p class="about-text">I'm a data analyst passionate about using data to solve problems and drive decisions. My work spans data wrangling, statistical analysis, and building interactive dashboards.</p>
+    <p class="about-text">With experience in Python, SQL, Tableau, and Power BI, I enjoy turning raw data into clear insights that tell a story. This portfolio showcases a few of my recent projects.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="row justify-content-center">
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/tech.jpg" class="card-img-top" alt="Tech Financial Analysis" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title fw-bold">Tech Giants Financial Analysis</h5>
+                <p class="card-text">
+                  A Python project using API data to compare revenue, profit & growth for Apple, Amazon, Google, Meta, and Microsoft.
+                </p>
+                <a href="https://github.com/ArianaPapantonio/Financial_Analysis_of_Tech_Giants" target="_blank" class="btn btn-outline-secondary mt-auto mx-auto">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/sales.jpg" class="card-img-top" alt="Online Sales Dashboard" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title fw-bold">Online Sales Dashboard</h5>
+                <p class="card-text">
+                  An analysis of online sales data using Python, SQL and Power BI to visualize trends and performance across categories.
+                </p>
+                <a href="https://github.com/ArianaPapantonio/Online_Sales_Dataset" target="_blank" class="btn btn-outline-secondary mt-auto mx-auto">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/barcelona_housing_project.png" class="card-img-top" alt="Barcelona Housing Analysis" style="height: 200px; object-fit: cover;">
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title fw-bold">Barcelona Housing Analysis</h5>
+                <p class="card-text">
+                  A full-stack project cleaning housing data in Sheets, analyzing it with SQL, and building a Tableau dashboard.
+                </p>
+                <a href="https://github.com/ArianaPapantonio/Barcelona_Housing_Analysis" target="_blank" class="btn btn-outline-secondary mt-auto mx-auto">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    
+    <div class="row text-center justify-content-center">
+
+      <!-- Excel & Sheets -->
+      <div class="col-md-2 mb-4">
+        <img src="images/skills/excel.PNG" alt="Excel & Sheets" 
+             style="width: 80px; height: 80px; object-fit: contain;" class="mb-3">
+        <h6 class="fw-bold">Excel & Sheets</h6>
+        <p>Advanced use of formulas, pivot tables, and cleaning functions.</p>
+      </div>
+
+      <!-- Python -->
+      <div class="col-md-2 mb-4">
+        <img src="images/skills/python.png" alt="Python" 
+             style="width: 80px; height: 80px; object-fit: contain;" class="mb-3">
+        <h6 class="fw-bold">Python</h6>
+        <p>Data analysis, EDA, and scripting using Pandas, NumPy, and Matplotlib.</p>
+      </div>
+
+       <!-- Data Handling -->
+       <div class="col-md-2 mb-4">
+        <img src="images/skills/datahandling.png" alt="Data Handling" 
+             style="width: 80px; height: 80px; object-fit: contain;" class="mb-3">
+        <h6 class="fw-bold">Data Handling</h6>
+        <p>Experience with APIs, ETL processes, and data cleaning & transformation.</p>
+      </div>
+
+      <!-- SQL -->
+      <div class="col-md-2 mb-4">
+        <img src="images/skills/sql.png" alt="SQL" 
+             style="width: 80px; height: 80px; object-fit: contain;" class="mb-3">
+        <h6 class="fw-bold">SQL</h6>
+        <p>Complex queries, joins, subqueries, and window functions with MySQL.</p>
+      </div>
+
+      <!-- Data Visualization -->
+      <div class="col-md-2 mb-4">
+        <img src="images/skills/data_vis.png" alt="Data Visualization" 
+             style="width: 80px; height: 80px; object-fit: contain;" class="mb-3">
+        <h6 class="fw-bold">Data Visualization</h6>
+        <p>Visual storytelling with Tableau, Power BI, Matplotlib, and Seaborn.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 text-white">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-4">Contact Me</h2>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.linkedin.com/in/arianapapantonio/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="rounded-circle bg-white p-2" style="width: 70px; height: 70px;">
+        </a>
+        <a href="https://github.com/ArianaPapantonio" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="rounded-circle bg-white p-2" style="width: 70px; height: 70px;">
+        </a>
+        <a href="mailto:arianapapantonio@gmail.com" target="_blank">
+          <img src="icons/email.jpg" alt="Gmail" class="contact-icon gmail-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
